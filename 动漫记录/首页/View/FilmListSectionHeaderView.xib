@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilmListSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music_play.png" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-cB-5Cy">
+                    <rect key="frame" x="15" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="FdZ-s6-HMh"/>
+                        <constraint firstAttribute="height" constant="20" id="o0X-mn-J1e"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJf-yN-G1a">
+                    <rect key="frame" x="40" y="0.0" width="57.5" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.22778871655464172" green="0.21148908138275146" blue="0.22378674149513245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(共214部)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSb-y2-YjQ">
+                    <rect key="frame" x="103.5" y="17.5" width="54" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59197336435317993" green="0.59605944156646729" blue="0.60013258457183838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lns-Xc-Fux" userLabel="1px">
+                    <rect key="frame" x="35" y="0.0" width="340" height="1"/>
+                    <color key="backgroundColor" red="0.89400809999999997" green="0.8941006064" blue="0.89809268710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="eTa-cN-kgg" customClass="OnePixelConstraint"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="film_heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="NNl-Gz-Pee" userLabel="heartImgView">
+                    <rect key="frame" x="340" y="15.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="7mD-SH-WR4"/>
+                        <constraint firstAttribute="width" constant="20" id="A7u-2M-gLc"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DJf-yN-G1a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="70o-fS-Tbm"/>
+                <constraint firstItem="MrE-cB-5Cy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="BE4-pQ-ERS"/>
+                <constraint firstItem="DJf-yN-G1a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="Cgx-ka-zr0"/>
+                <constraint firstItem="NNl-Gz-Pee" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="F0l-3W-Yto"/>
+                <constraint firstItem="lns-Xc-Fux" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jka-xT-YGG"/>
+                <constraint firstAttribute="trailing" secondItem="lns-Xc-Fux" secondAttribute="trailing" id="U0g-Qf-9GU"/>
+                <constraint firstItem="MrE-cB-5Cy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="djG-o2-z2E"/>
+                <constraint firstItem="lns-Xc-Fux" firstAttribute="leading" secondItem="MrE-cB-5Cy" secondAttribute="trailing" id="fx6-Hn-Gre"/>
+                <constraint firstAttribute="bottom" secondItem="DJf-yN-G1a" secondAttribute="bottom" id="gpd-n4-aa0"/>
+                <constraint firstAttribute="trailing" secondItem="NNl-Gz-Pee" secondAttribute="trailing" constant="15" id="kjB-c5-qGN"/>
+                <constraint firstItem="tSb-y2-YjQ" firstAttribute="leading" secondItem="DJf-yN-G1a" secondAttribute="trailing" constant="6" id="kke-pG-8Ya"/>
+                <constraint firstItem="tSb-y2-YjQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lug-fR-Yte"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countNoLabel" destination="tSb-y2-YjQ" id="1vT-JQ-I5R"/>
+                <outlet property="heartImgView" destination="NNl-Gz-Pee" id="JWH-1W-Atd"/>
+                <outlet property="titleLabel" destination="DJf-yN-G1a" id="nPH-xc-Q1N"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="film_heart.png" width="20" height="20"/>
+        <image name="music_play.png" width="20" height="20"/>
+    </resources>
+</document>

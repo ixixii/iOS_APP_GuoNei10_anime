@@ -1,0 +1,49 @@
+//
+//  Beyond.pch
+//  动漫记录
+//
+//  Created by beyond on 2020/5/25.
+//  Copyright © 2020 sg32. All rights reserved.
+//
+  /*
+  1. 创建一个other -> pch文件
+  
+  2. 设置pch的build参数
+   2.1. targets -> BuildSettings ->  点击All -> 搜索 prefix header
+   2.2. Precompile Prefix Header 设置为：YES
+   2.3. Prefix Header路径： $(SRCROOT)/工程名/xxx.pch
+        $(SRCROOT)/anime/beyond.pch
+  */
+
+
+#ifndef Beyond_pch
+#define Beyond_pch
+
+#define kColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define ScreenBounds [UIScreen mainScreen].bounds
+#define ScreenWidth ScreenBounds.size.width
+#define ScreenHeight ScreenBounds.size.height
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define kAppName @"动漫记录"
+
+#define kDocFolder [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+
+#define kMainBundle [NSBundle mainBundle]
+
+// 帅哥动漫的初始数据和doc路径(已经加密处理)
+#define kFilmDataPlistPathInDoc [kDocFolder stringByAppendingPathComponent:@"encode_film_data"]
+
+// 帅哥动漫的未看动漫的初始数据和doc路径(已经加密处理)
+#define kFilmUnWatchDataPlistPathInDoc [kDocFolder stringByAppendingPathComponent:@"encode_film_unwatch_data"]
+
+#import "MJExtension.h"
+
+#define UIColorFromIntRBG(RED, GREEN, BLUE) [UIColor colorWithRed:RED/255.0 green:GREEN/255.0 blue:BLUE/255.0 alpha:1.0]
+
+// 帅哥动漫,收藏和取消收藏要发出通知
+#define kFilmDataSourceChangedNotification @"noti_filmDataSourceChangedNotification"
+
+#endif /* Beyond_pch */
